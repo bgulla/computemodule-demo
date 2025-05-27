@@ -1,59 +1,53 @@
-## Python-based Compute Module
+# Python-based Compute Module
 
 ## Create the Compute Module in Foundry
+
 ### Module Creation
-![](/python/static/01_modal_create.png)
-Name your compute module and place it in the project needed for your organization. Note: the compute module will inherit the permissions of the folder/project in which it resides. 
+![Module Creation](/python/static/01_modal_create.png)
 
-![](/python/static/01_modal_create_2.png)
+To create your compute module, give it a meaningful name and place it in the appropriate project for your organization. Remember, the compute module will inherit the permissions of the folder/project in which it resides.
 
+![Module Placement](/python/static/01_modal_create_2.png)
 
-## Configure your Compute Module
-![](/python/static/01_nosetup.png)
+## Configure Your Compute Module
 
+### Assign a Container to the Compute Module
+![Add Container](/python/static/01_add_container.png)
 
-### Assign a container to the Compute Module
-![](/python/static/01_add_container.png)
+Select the `artifact repository` and specify the container image and tag you wish to use in your compute module.
 
-Here you will select the `artifact repository` and specific container image and tag that you wish to use in your compute module. 
+### Set Runtime Container Settings
+![Runtime Settings](/python/static/01_runtime_settings.png)
 
+Configure runtime-specific parameters for your compute module, including:
 
-### Set runtime container settings
-![](/python/static/01_runtime_settings.png)
-
-Here you can configure runtime specific parameters to your compute module. 
-
-Including:
-* Environment Variables
-* Arguments
-* Voume Mounts
-* Resource Constraints
-* Readiness Probes
-* Liveness Probes
-* Log format/locations
-
+- Environment Variables
+- Arguments
+- Volume Mounts
+- Resource Constraints
+- Readiness Probes
+- Liveness Probes
+- Log Format/Locations
 
 ### Connecting External Datasources
-![](/python/static/01_connect_data.png)
-
+![Connect Data](/python/static/01_connect_data.png)
 
 ### Other Runtime Configurations
-![](/python/static/other_configs.png)
+![Other Configs](/python/static/other_configs.png)
 
+## Function Import
 
-### Function Import
+### Swagger/OpenAPI Interface
+![Swagger Interface](/python/static/01_swagger.png)
 
-![](/python/static/01_swagger.png)
+This view displays our image's `Swagger`/`OpenAPI` spec interface, showcasing the exposed RESTful interface with both functions and their respective arguments.
 
-This is the `docker run ..` view of our image that showcases our `Swagger`/`OpenAPI` spec interface. As you can see here, the restful interface is exposed with both the functions and their respective arguments.  
+### Automatic Function Import
+![Function Screen](/python/static/01_function_screen.png)
 
+Since we utilize an [OpenAPI](https://www.openapis.org/)-spec webserver, Foundry automatically parses the spec and imports the functions into the compute module manifest.
 
-![](/python/static/01_function_screen.png)
+## Testing Functions
+![REST Test](/python/static/01_rest_test.png)
 
-Because we are utilizing a [OpenAPI](https://www.openapis.org/)-spec webserver, Foundry will automatically parse the spec and import the functions into the compute module manifest. 
-
-
-### Testing Functions 
-![](/python/static/01_rest_test.png)
-Once the functions are imported into the compute module spec, you are able to test the functionality of your image via a `POST` interface .
-
+Once functions are imported into the compute module spec, you can test the functionality of your image via a `POST` interface.
