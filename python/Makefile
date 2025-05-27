@@ -1,14 +1,12 @@
 # Variables
 # IMAGE_NAME = containers.octopus.kraken.ptdevcloud.com/flask-example
-IMAGE_NAME = whirl-container-registry.washington.palantircloud.com/computemodule-demo
+IMAGE_NAME = containers.octopus.kraken.ptdevcloud.com/book-example
 TAG = "python"
-CONTAINER_NAME = flask-example
+CONTAINER_NAME = book-example
 CHART_NAME = flask-example
 NAMESPACE = default
 PLATFORM ?= "linux/amd64,linux/arm64"
 BUILDER_NAME ?= mybuilder
-
-
 ## curl -s http://localhost:8000/swagger.json | jq -c | sed 's/"/\\"/g'
 
 
