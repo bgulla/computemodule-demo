@@ -1,5 +1,5 @@
 
-# Create the Compute Module in Foundry
+# Creating your first Compute Module
 
 ## Preqs
 You must have access to a `docker-registry` or [Foundry Artifact Repository](../artifact-registry.md).
