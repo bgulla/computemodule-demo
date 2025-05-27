@@ -1,5 +1,8 @@
 # Variables
-IMAGE_NAME = java-book-api
+# IMAGE_NAME = containers.octopus.kraken.ptdevcloud.com/bookexample:java2
+IMAGE_NAME = whirl-container-registry.washington.palantircloud.com/computemodule-demo
+TAG = "java"
+IMAGE_NAME = $(IMAGE_NAME):$(TAG)
 CONTAINER_NAME = java-book-api-container
 PORT = 8080
 

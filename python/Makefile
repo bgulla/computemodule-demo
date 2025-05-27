@@ -1,6 +1,7 @@
 # Variables
-IMAGE_NAME = containers.octopus.kraken.ptdevcloud.com/flask-example
-TAG=0.0.2
+# IMAGE_NAME = containers.octopus.kraken.ptdevcloud.com/flask-example
+IMAGE_NAME = whirl-container-registry.washington.palantircloud.com/computemodule-demo
+TAG = "python"
 CONTAINER_NAME = flask-example
 CHART_NAME = flask-example
 NAMESPACE = default
