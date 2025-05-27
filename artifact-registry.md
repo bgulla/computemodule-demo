@@ -1,4 +1,9 @@
 # Foundry Artifact Registries Setup
+
+![](/python/static/00_bigview.png)
+
+
+
 ## Prereqs/Notes
 * In Foundry terms, `docker registry` == `artifact repository`. While `artifact repositories` can host several different pkg formats (`OCI`, `JARs`, `RPMs`, etc), the hosting interface within Foundry is the same.
 
