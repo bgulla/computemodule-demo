@@ -5,4 +5,5 @@
 * [Artifact Repository Access](../artifact-registry.md)
 
 ## Resources
-1) [Compute Module Creation](./creating_computemodule.md)
+* [Compute Module Creation](./creating_computemodule.md)
+* [Monitoring your Compute Module (Coming Soon)]()
