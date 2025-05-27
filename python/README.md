@@ -1,5 +1,5 @@
 # Python-based Compute Module
-![](/static/build_screen.png)
+![](static/build_screen.png)
 
 ## Prereqs
 * [Artifact Repository Access](/../artifact-registry.md)
