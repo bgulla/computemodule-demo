@@ -1,4 +1,4 @@
-# Get started with Compute Modules
+# Getting started with Compute Modules
 ![computemodule-overview](/python/static/00_cm_overview.png)
 ## Start developing with our Compute Modules quick start guides:
 
